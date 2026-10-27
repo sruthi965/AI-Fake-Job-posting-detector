@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+# Datasets and trained models are not committed (see data/README.md and artifacts/README.md)
+data/*.csv
+artifacts/*.joblib
+artifacts/metrics.json
+.DS_Store

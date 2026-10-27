@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in · JobGuard AI</title>
+  <meta name="description" content="AI-based fake job posting detector: check a job ad for scam warning signs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="login">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <div class="auth-wrap card">
+      <h1>Log in</h1>
+      <p class="muted">Sign in to save and review your analyses.</p>
+      <div id="form-error" class="alert error" role="alert" tabindex="-1"></div>
+      <form id="login-form">
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+        <button class="btn" type="submit">Log in</button>
+      </form>
+      <p class="alt">New here? <a href="register.html">Create an account</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">JobGuard AI is an educational tool. Predictions are estimates, not proof of fraud or legitimacy.</footer>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>

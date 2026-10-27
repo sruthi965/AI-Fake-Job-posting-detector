@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analyze a job posting · JobGuard AI</title>
+  <meta name="description" content="AI-based fake job posting detector: check a job ad for scam warning signs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="analyze">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <h1>Analyze a job posting</h1>
+    <p class="muted">Enter the job details below to check for potential fraud indicators. Do not paste passwords or personal documents.</p>
+    <form id="analyze-form" class="card">
+      <div id="form-error" class="alert error" role="alert" tabindex="-1"></div>
+      <div class="form-grid">
+        <div class="field"><label for="job_title">Job title</label><input id="job_title" name="job_title" required minlength="2" maxlength="255" autocomplete="off"></div>
+        <div class="field"><label for="company_name">Company name <span class="opt">(optional)</span></label><input id="company_name" name="company_name" maxlength="255" autocomplete="off"></div>
+        <div class="field full"><label for="description">Job description</label><textarea id="description" name="description" required minlength="20" maxlength="10000"></textarea><span class="hint">At least 20 characters. Include any payment, contact or salary details from the ad.</span></div>
+        <div class="field"><label for="requirements">Required qualifications <span class="opt">(optional)</span></label><input id="requirements" name="requirements" maxlength="5000"></div>
+        <div class="field"><label for="employment_type">Employment type</label>
+          <select id="employment_type" name="employment_type"><option value="">Not specified</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Temporary</option><option>Internship</option></select></div>
+        <div class="field"><label for="salary_range">Salary range <span class="opt">(optional)</span></label><input id="salary_range" name="salary_range" maxlength="100" placeholder="e.g. $500 - $800 per week"></div>
+      </div>
+      <div class="form-actions">
+        <label class="check" id="save-row"><input type="checkbox" id="save_history"> Save this analysis to my history</label>
+        <button class="btn" type="submit">Analyze job posting</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">JobGuard AI is an educational tool. Predictions are estimates, not proof of fraud or legitimacy.</footer>
+  <script src="js/auth.js" defer></script>
+  <script src="js/analyze.js" defer></script>
+</body>
+</html>

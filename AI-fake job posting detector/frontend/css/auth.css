@@ -1,0 +1,7 @@
+.auth-wrap { max-width: 440px; margin: 24px auto; }
+.auth-wrap form { display: grid; gap: 16px; }
+.auth-wrap .alt { text-align: center; margin-top: 16px; font-size: .92rem; }
+.profile-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+.stat { background: var(--blue-50); border: 1px solid #cfe0ff; border-radius: 8px; padding: 14px; }
+.stat b { display: block; font-size: 1.5rem; }
+@media (max-width: 600px) { .profile-grid { grid-template-columns: 1fr 1fr; } }

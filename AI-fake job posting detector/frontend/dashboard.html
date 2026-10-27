@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · JobGuard AI</title>
+  <meta name="description" content="AI-based fake job posting detector: check a job ad for scam warning signs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="dashboard">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <h1>Model performance</h1>
+    <p class="muted">Evaluation metrics for the fake job posting classifier.</p>
+    <div id="model-root"><p class="muted">Loading…</p></div>
+    <section class="card" aria-labelledby="your-activity"><h2 id="your-activity">Your activity</h2><div id="user-root"></div></section>
+  </main>
+  <footer class="site-footer">JobGuard AI is an educational tool. Predictions are estimates, not proof of fraud or legitimacy.</footer>
+  <script src="js/auth.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>

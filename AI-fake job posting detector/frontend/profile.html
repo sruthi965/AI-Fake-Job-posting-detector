@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile · JobGuard AI</title>
+  <meta name="description" content="AI-based fake job posting detector: check a job ad for scam warning signs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="profile">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <h1>Profile</h1>
+    <div id="form-error" class="alert error" role="alert"></div>
+    <section class="card">
+      <dl class="summary"><dt>Name</dt><dd id="profile-name"></dd><dt>Email</dt><dd id="profile-email"></dd><dt>Member since</dt><dd id="profile-joined"></dd></dl>
+      <div class="profile-grid">
+        <div class="stat"><b id="stat-total">0</b>Analyses</div><div class="stat"><b id="stat-fraud">0</b>Flagged fraudulent</div>
+        <div class="stat"><b id="stat-legit">0</b>Likely legitimate</div><div class="stat"><b id="stat-avg">0%</b>Average probability</div>
+      </div>
+      <div class="actions-row"><a class="btn secondary" href="history.html">View history</a><button class="btn danger" type="button" id="logout-button">Log out</button></div>
+    </section>
+  </main>
+  <footer class="site-footer">JobGuard AI is an educational tool. Predictions are estimates, not proof of fraud or legitimacy.</footer>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>

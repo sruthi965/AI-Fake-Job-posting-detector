@@ -1,0 +1,17 @@
+@media (max-width: 860px) {
+  .hero .inner { grid-template-columns: 1fr; padding: 36px 20px; }
+  .hero svg { display: none; }
+  .features { grid-template-columns: 1fr 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .site-header .bar { flex-wrap: wrap; gap: 10px 16px; }
+  .nav { order: 3; flex-basis: 100%; overflow-x: auto; }
+}
+@media (max-width: 600px) {
+  main { padding: 20px 14px 40px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .card { padding: 18px; }
+  .verdict { flex-direction: column; align-items: flex-start; }
+  h1 { font-size: 1.55rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .features { grid-template-columns: 1fr; }
+}

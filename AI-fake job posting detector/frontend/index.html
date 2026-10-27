@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fake job posting detector · JobGuard AI</title>
+  <meta name="description" content="AI-based fake job posting detector: check a job ad for scam warning signs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+  <header class="site-header" id="site-header"></header>
+  <section class="hero">
+    <div class="inner">
+      <div>
+        <h1>AI-Based Fake Job Posting Detector</h1>
+        <p>Stay safe. Verify before you apply.</p>
+        <p>Paste a job ad and get a fraud-risk estimate, the warning signs behind it, and a plain-language explanation. Built with machine learning, text analysis and an LLM.</p>
+        <div class="actions"><a class="btn" href="analyze.html">Start analysis</a><a class="btn ghost" href="dashboard.html">See model performance</a></div>
+      </div>
+      <svg viewBox="0 0 360 260" role="img" aria-label="A job posting being checked with a magnifying glass">
+        <rect x="40" y="30" width="230" height="170" rx="12" fill="#e9f1ff"/>
+        <rect x="40" y="30" width="230" height="30" rx="12" fill="#2f7bff"/>
+        <text x="62" y="162" font-size="38" font-weight="700" fill="#0f2f6b" font-family="sans-serif">JOB</text>
+        <rect x="150" y="84" width="90" height="8" rx="4" fill="#9db8e6"/><rect x="150" y="104" width="72" height="8" rx="4" fill="#9db8e6"/><rect x="150" y="124" width="84" height="8" rx="4" fill="#9db8e6"/>
+        <circle cx="228" cy="150" r="46" fill="#fff" fill-opacity=".92" stroke="#0f2f6b" stroke-width="9"/>
+        <path d="m262 184 38 38" stroke="#0f2f6b" stroke-width="12" stroke-linecap="round"/>
+        <path d="m210 150 14 14 24-28" fill="none" stroke="#12713f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+  <main id="main">
+    <h2>What it checks</h2>
+    <div class="features">
+      <div class="feature"><strong>Machine learning</strong>Classifier trained on labelled postings</div>
+      <div class="feature"><strong>Text analysis</strong>TF-IDF features from the posting text</div>
+      <div class="feature"><strong>Warning signs</strong>Fees, vague duties, odd contact channels</div>
+      <div class="feature"><strong>LLM explanation</strong>Why a posting was flagged, in plain words</div>
+      <div class="feature"><strong>History</strong>Save analyses to your account</div>
+    </div>
+  </main>
+  <footer class="site-footer">JobGuard AI is an educational tool. Predictions are estimates, not proof of fraud or legitimacy.</footer>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>
